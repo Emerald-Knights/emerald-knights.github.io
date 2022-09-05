@@ -6,9 +6,14 @@
 }
 .member-container{
     margin: 3vh 4vw 5vh 4vw;
-    float:left;
+    float: left;
+    color: azure;
 }
 
-.captain{
+.current-captain{
+    color: green;
+}
+
+.previous-captain{
     color: gold;
 }
