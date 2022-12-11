@@ -2,8 +2,7 @@
 .navbar {
     z-index: 10;
 
-    background: darkgreen;
-    color: orange;
+    background: rgb(21, 64, 36);
     height: 7vh;
     top:0;
     width:100%;
@@ -12,7 +11,7 @@
 
 .navbar-collapse{
     width: 100vw;
-    background: darkgreen;
+    background: rgb(21, 64, 36);
 }
 
 .navbar-brand,
@@ -27,7 +26,7 @@
 }
 
 .navbar-brand:hover{
-    background-color: green;
+    background: rgb(21, 64, 36);
 }
 .nav-link:hover {
     color: cadetblue;
