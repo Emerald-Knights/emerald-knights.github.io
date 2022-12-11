@@ -108,14 +108,14 @@ header .container {
     transform: translateY(-50%);
 }
 /* Content */
-.content-contact{
+/*.content-contact{
     text-align: center;
     margin: 3vh 5vw 2vh;
     font-size: 2em;
     color: aliceblue;
     text-transform: capitalize;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+}*/
 .content{
     text-align: center;
     margin: 3vh 5vw 2vh;
