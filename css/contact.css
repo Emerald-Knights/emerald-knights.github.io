@@ -1,3 +1,93 @@
+.contact{
+    text-align: center;
+    color: white;
+    background-color: rgb(79, 79, 79);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.email-contact {
+
+    position: absolute;
+    text-align: center;
+    top: 525px;
+    padding-left: 120px;
+    padding-top: 210px;
+    padding-right: 100px;
+    padding-bottom: 48px;
+    background-color: gray;
+    z-index: -1;
+}
+.email-image{
+    background-color: gray;
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 590px;
+    left: 210px;
+}
+.social-contact {
+    position: absolute;
+    text-align: center;
+    top: 525px;
+    left: 485px;
+    padding-top: 210px;
+    padding-right: 100px;
+    padding-left: 37px;
+    padding-bottom: 80px;
+    background-color: gray;
+    z-index: -1;
+}
+
+.social-image{
+    background-color: gray;
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 590px;
+    left: 580px;
+}
+.insta-image{
+    position: absolute;
+    left: 30px;
+    width: 50px;
+    height: auto;
+}
+.facebook-image{
+    position: absolute;
+    left: 128px;
+    width: 50px;
+    height: auto;
+}
+.twitter-image{
+    position: absolute;
+    left: 225px;
+    width: 57px;
+    height: auto;
+}
+
+.school-contact {
+    position: absolute;
+    top: 50px;
+    left: 410px;
+    top: 60px;
+    background-color: gray;
+    z-index: -1;
+    width: auto;
+}
+.school-image{
+    position:absolute;
+    background-color: gray;
+    width: 160px;
+    height: auto;
+    top: 50px;
+    left: 370px;
+}
+
+
+
+
 .img-reg {
     text-align: center;
     display: block;
@@ -6,15 +96,6 @@
     width: max;
     height: auto;
 }
-
-.email-contact {
-
-    position: absolute;
-    top: 550px;
-    padding-left: 30px;
-
-}
-
 .header-img {
     display: block;
     height: 100%;
@@ -33,6 +114,6 @@
     background-color: white;
     height: 100%;
     width: 100%;
-    border-bottom: 5px solid rgb(21, 20, 20);
     
 }
+
