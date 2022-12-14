@@ -8,81 +8,75 @@
 
 
 .email-contact {
-
-    position: absolute;
+    float: left;
+    width: 33.33%;
     text-align: center;
-    top: 525px;
-    padding-left: 120px;
     padding-top: 210px;
-    padding-right: 100px;
-    padding-bottom: 48px;
+    padding-bottom: 64px;
     background-color: gray;
-    z-index: -1;
+    z-index: 0;
 }
 .email-image{
+    position: absolute;
+    left: 12.5%;
+    top: 600px;
     background-color: gray;
     width: 120px;
     height: auto;
-    position: absolute;
-    top: 590px;
-    left: 210px;
+    z-index: 2;
 }
 .social-contact {
-    position: absolute;
+    float: left;
+    width: 33.33%;
     text-align: center;
-    top: 525px;
-    left: 485px;
     padding-top: 210px;
-    padding-right: 100px;
-    padding-left: 37px;
-    padding-bottom: 80px;
-    background-color: gray;
-    z-index: -1;
+    padding-bottom: 48px;
+    background-color: rgb(177, 177, 177);
+    z-index: 0;
 }
 
 .social-image{
-    background-color: gray;
+    position: absolute;
+    left: 45.4%;
+    top: 602px;
+    background-color: rgb(177, 177, 177);
     width: 120px;
     height: auto;
-    position: absolute;
-    top: 590px;
-    left: 580px;
+    z-index: 2;
 }
 .insta-image{
-    position: absolute;
-    left: 30px;
-    width: 50px;
+    text-align: center;
+    width: 40px;
     height: auto;
 }
 .facebook-image{
-    position: absolute;
-    left: 128px;
-    width: 50px;
+    text-align: center;
+    width: 40px;
     height: auto;
 }
 .twitter-image{
-    position: absolute;
-    left: 225px;
-    width: 57px;
+    text-align: center;
+    width: 48px;
     height: auto;
 }
 
-.school-contact {
-    position: absolute;
-    top: 50px;
-    left: 410px;
-    top: 60px;
+.schol-contact {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding-top: 210px;
+    padding-bottom: 64px;
     background-color: gray;
-    z-index: -1;
-    width: auto;
+    z-index: 0;
 }
 .school-image{
-    position:absolute;
+    position: absolute;
+    left: 77.8%;
+    top: 585px;
     background-color: gray;
-    width: 160px;
+    width: 140px;
     height: auto;
-    top: 50px;
-    left: 370px;
+    z-index: 2;
 }
 
 
