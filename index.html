@@ -1,344 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="FTC 10582 | Emerald Knights"/>
-    <meta property="og:description" content="The official website for FTC Team 10582, the Emerald Knights!"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:url" content="https://emerald-knights.github.io"/>
-    <meta property="og:image" content="https://i.imgur.com/EzjcSun.png"/>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/global.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/nodes.css">
-
-    <title>FTC 10582 | Emerald Knights</title>
+    <title>FTC 10582 – Emerald Knights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="res/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-
-
-<nav class="navbar navbar-expand-md">
-
-    <a class="navbar-brand" href="#" style="width:5vh;">
-        <img src="res/img/ek-logo.png" alt="Emerald Knights Logo" style="height:5vh; width:5vh;">
-    </a>
-
-    <button class="navbar-toggler wht" type="button" data-toggle="collapse" data-target="#menu">
-        <img src="res/img/whitearrow.png" alt="Down Arrow" class="nav-ico">
-    </button>
-
-    <div class="collapse navbar-collapse  justify-content-center" id="menu">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="seasonal">
-                    Seasonal
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="members">
-                    Members
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact">
-                    Contact
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="sponsors">
-                    Sponsors
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Emerald-Knights" target="_blank">
-                    Github <span class="header-ext">(external)</span>
-                </a>
-            </li>
-        </ul>
-
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top brand-gradient">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="res/img/ek-logo.png" alt="Emerald Knights Logo" class="me-2" style="height:40px;width:40px;object-fit:contain;"/>
+            <span class="brand-title">FTC 10582 • Emerald Knights</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain" aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="seasonal/index.html">Season</a></li>
+                <li class="nav-item"><a class="nav-link" href="members/index.html">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="sponsors/index.html">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact/index.html">Contact</a></li>
+                <li class="nav-item"><a class="btn btn-outline-light ms-lg-2" target="_blank" rel="noopener" href="https://github.com/">GitHub ↗</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-    <div class="header">
-        <span class="header-blur"></span>
 
-        <div class="header-fill" style="background-color: rgb(91, 221, 135)">
-            <span style = "margin-left: auto; margin-right: auto;">
-                <!--<video autoplay muted loop playsinline class="vid" style="width: max-content; height: 50vh;">
-                    <source src="res/img/Montage.mp4" type="video/mp4">
+<!-- Hero -->
+<header class="py-5 text-center hero">
+    <div class="container py-4">
+        <h1 class="display-5 fw-bold text-white">Building Bots • Growing Minds</h1>
+        <p class="lead text-white-50 mx-auto" style="max-width: 800px;">We are FTC Team 10582, the <strong>Emerald Knights</strong> — a student‑run robotics team blending creativity, engineering, and community impact.</p>
+        <a href="#who" class="btn btn-jade btn-lg mt-2">Who We Are</a>
+    </div>
+</header>
 
-                </video>-->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
 
-                <center>
-                    <h1 class="header2-text">EMERALD KNIGHTS #10582</h1>
-                </center>
-            </span>
-            <br>
-            <img class="header-img" alt="Emerald Knights Banner" src="res/img/ek-banner-removebg-preview.png" style="z-index: 3; height: 30vw; width: 53vw; opacity: 0.4">
+<!-- Who We Are -->
+<section id="who" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img class="img-fluid rounded-4 shadow-sm" src="" alt="Robot build" />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="section-title">Who We Are</h2>
+                <p>Founded in 2015, the Emerald Knights are a FIRST® Tech Challenge team focused on rigorous engineering and gracious professionalism. We design, prototype, and code competitive robots while mentoring younger students and serving our community.</p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="badge rounded-pill bg-jade">CAD & Design</span>
+                    <span class="badge rounded-pill bg-jade">Software & Autonomy</span>
+                    <span class="badge rounded-pill bg-jade">Mechanical</span>
+                    <span class="badge rounded-pill bg-jade">Outreach</span>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <div>
-        <div class="content">
-            <br>
-            <div class="w3-container" style="width: 35vw; float: left; margin-left: 3vw; margin-right: 5vw;">
-            <h1 class = "header1-text" style="text-align: left; margin-left: 8.5vw;">About Us</h1>
-            <p style="text-align: left; font-family: Monaco, monospace";> 
-                Hi! We are FTC team 10582, the Emerald Knights.
-                <br>
-                Every year, we compete in the FIRST Tech Challenge, a robotics competition designed for high school students to design, build, and code a robot to complete a variety of tasks that change each year.
-                The game encourages not only learning, but also collaboration, sportsmanship, and fun as part of the creation process.
 
-                <br>
-                We are one of 3 teams heralding from Livingston New Jersey, and we are excited to be competing this season!
-                Our team has been active for over 5 years, and we have made it to worlds in Detroit twice.
-                Each year, our team has continued to learn and grow while also passing our knowledge not only to new members to the team, but also members of our community as a whole.
-                <br>
-                We hope to see you all at future competitions!
-
-            </p>
-            </div>
-            <br>
-            <br>
-            <img src="res/img/ekdesgin.png" alt="T-Shirt Design" style="height: auto; width: 40vw;">
-            <br>
-            <br>
-            <br>
-            <!--
-            <p>
-                Exciting stuff is yet to come.
-
-                    <ul>
-                        <li>
-                            Give me info to put here I guess
-                        </li>
-                    </ul>
-            </p>
-            -->
-        </div>
+<!-- Gallery (Photos & Videos) -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Media Gallery</h2>
+        <p class="text-center text-muted mb-5">Highlights from design reviews, scrimmages, and events.</p>
     </div>
-
-
-
-
-        <!--<div>
-            <div class="content-blue" style="height: 75vw; clear: left;">
-                <br>
-                <h1 style="margin-top: 5vw;">Design Process</h1>
-                <p>
-                    Our team uses the EPIC IDEA design process.
-                    In EPIC IDEA, we
-                </p>
-                <br>
-                <div class="node popup" style="margin: auto;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Write a specific problem statement</li>
-                        </ul>
-                    </span>
-                    <p class="node-text">
-                        Examine the problem
-                    </p>
-                </div>
-
-                <div class="node popup" style="float: left; margin-left: 30vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Repeat the Process for Different Mechanisms</li>
-                            <li>Improve the Current One</li>
-                        </ul>
-                    </span>
-
-                    <p class="node-text">
-                        Again
-                    </p>
-                </div>
-                <div class="node popup" style="float: right; margin-right: 30vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Think</li>
-                            <li>Visualize</li>
-                            <li>Sketch and Label</li>
-                            <li>Share</li>
-                            <li>Discus</li>
-                        </ul>
-                    </span>
-                    <p class="node-text">
-                        Plan
-                    </p>
-                </div>
-
-                <div class="node popup" style="float: left; clear: left; margin-left: 18vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Analyze the Data</li>
-                            <li>Reflect</li>
-                            <li>Discuss</li>
-                        </ul>
-                    </span>
-                    <p class="node-text">
-                        Evaluate
-                    </p>
-                </div>
-                <div class="node popup" style="float: right; clear: right; margin-right: 18vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Plug in Decision Matrix</li>
-                            <li>List Pros/ Cons</li>
-                            <li>Decide on a Design Prototype</li>
-                        </ul>
-                    </span>
-                    <p class="node-text">
-                        Investigate
-                    </p>
-                </div>
-                <div class="node popup" style="float: left; clear: left; margin-left: 30vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Test and Record Results</li>
-                        </ul>
-                    </span>
-                    <p class="node-text">
-                        Data
-                    </p>
-                </div>
-                <div class="node popup" style="float: right; clear: right; margin-right: 30vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Stress Test</li>
-                            <li>Take Specific Measurements</li>
-                        </ul>
-                    </span>
-
-                    <p class="node-text">
-                        CAD
-                    </p>
-                </div>
-
-                <img src="res/img/loops.png" style= "margin-top: 10vw; width: 10vw; height: 10vw;" class="rotate-image">
-
-                <div class="node popup" style="margin: auto; clear: both; margin-bottom: 5vw;">
-                    <span class="popup-text">
-                        <ul>
-                            <li>Build the Mechanism</li>
-                            <li>Write Code</li>
-                        </ul>
-                    </span>
-                    <p class="node-text" style="margin-bottom: 5vh;">
-                        Implement
-                    </p>
-                </div>
-            
-                <ul style="list-style-position: inside">
-                    <li>Examine the problem</li>
-                    <li>Plan</li>
-                    <li>Investigate</li>
-                    <li>CAD</li>
-                    <li>Implement</li>
-                    <li>Data</li>
-                    <li>Evaluate</li>
-                    <li>Again</li>
-                </ul>
-
-                <img src="res/img/EPIC.png">
-            </div>
-        </div>-->
-
-        <div>
-            <br>
-            <br>
-            <center>
-                <img src = "res/img/EPIC.png" alt = "EPIC Idea" style = "height: auto; width: 40w;">
-            </center>
-        </div>  
-
-        <div>
-            <div class="content">
-                <br>   
-                <h1>Robot</h1>
-
-                <p>
-                    Each year, our robot gets a new design, and with it a new name.
-                    This year, our robot is named BoWei (after one of our members), and features a 4 wheel
-                    mecanum drive with a 3 part launch featuring a collection, feeder, and shooter.
-                    BoWei also has 3 odometry pods on the bottom, ensuring he knows where he is on he field.
-                    <br>
-                    BoWei uses an OpenCV detector in autonomous to see how many rings there are, moving accordingly.
-                    Other features BoWei has include a toggle for robot oriented and field oriented drive, a slow mode,
-                    and a linear regression model that automatically sets the right shooter power to the launch based on
-                    how far BoWei is to the goal.
-                    <br>
-                    <br>
-
-                </p>
-                <img src="res/img/bot.gif" alt = "Robot CAD Gif" style="height: auto; width: 20vw;">
-                <img src="res/img/Robot.png" alt="Robot Picture" style = "height: auto; width: 20vw; float:left;">
-                <img src="res/img/collect.gif" alt="Collection gif" style="height: auto; width: 20vw; float: right;">
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class = "header-fill" style="position: relative;height: 45vh;">
-            <span class="header-blur"></span>
-            <img src="res/img/teampic.jpg" alt="Awards Picture" class="img-background" style="transform: translateY(2%);">
-
-            <div class="text-on-img" style="color: gold; z-index: 3;">
-                <h1>Awards</h1>
-
-                <ul>
-                    <li>2016 - 2017: Leagues Think Award</li>
-                    <li>2017 - 2018: Leagues Inspire Award</li>
-                    <li>2017 - 2018: NJ States Think Award</li>
-                    <li>2017 - 2018: Super Regionals Alliance Captain 2nd Place</li>
-                    <li>2018 - 2019: NJ States Think Award</li>
-                    <li>2019 - 2020: Leagues Inspire Award</li>
-                    <li>2020 - 2021: Leagues Control Award</li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="content">
-            <h3>
-                See our Control Award video for states below!
-            </h3>
-            <iframe
-                    width="560" height="315" src="https://www.youtube.com/embed/XZH4h8PtO7s" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-
-            </iframe>
-            <br>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        <p class="footer-text">
-            © Emerald Knights 2022-23
-        </p>
-    </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+</section>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+
+<!--    <meta property="og:type" content="website">-->
+<!--    <meta property="og:title" content="FTC 10582 | Emerald Knights"/>-->
+<!--    <meta property="og:description" content="The official website for FTC Team 10582, the Emerald Knights!"/>-->
+<!--    <meta property="og:url" content="https://emerald-knights.github.io"/>-->
+<!--    <meta property="og:image" content="https://i.imgur.com/EzjcSun.png"/>-->
+
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"-->
+<!--    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+
+<!--    <link rel="stylesheet" href="css/nav.css">-->
+<!--    <link rel="stylesheet" href="css/global.css"/>-->
+<!--    <link rel="stylesheet" href="css/styles.css"/>-->
+<!--    <link rel="stylesheet" href="css/about.css">-->
+<!--    <link rel="stylesheet" href="css/nodes.css">-->
+
+<!--    <title>FTC 10582 | Emerald Knights</title>-->
+<!--</head>-->
+<!--<body>-->
+
+
+
+
+<!--<nav class="navbar navbar-expand-md">-->
+
+<!--    <a class="navbar-brand" href="#" style="width:5vh;">-->
+<!--        <img src="res/img/ek-logo.png" alt="Emerald Knights Logo" style="height:5vh; width:5vh;">-->
+<!--    </a>-->
+
+<!--    <button class="navbar-toggler wht" type="button" data-toggle="collapse" data-target="#menu">-->
+<!--        <img src="res/img/whitearrow.png" alt="Down Arrow" class="nav-ico">-->
+<!--    </button>-->
+
+<!--    <div class="collapse navbar-collapse  justify-content-center" id="menu">-->
+<!--        <ul class="navbar-nav">-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="seasonal">-->
+<!--                    Seasonal-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="members">-->
+<!--                    Members-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="contact">-->
+<!--                    Contact-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="sponsors">-->
+<!--                    Sponsors-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="https://github.com/Emerald-Knights" target="_blank">-->
+<!--                    Github <span class="header-ext">(external)</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </ul>-->
+
+<!--    </div>-->
+<!--</nav>-->
+
+<!--    <div class="header">-->
+<!--        <span class="header-blur"></span>-->
+
+<!--        <div class="header-fill" style="background-color: rgb(91, 221, 135)">-->
+<!--            <span style = "margin-left: auto; margin-right: auto;">-->
+<!--                &lt;!&ndash;<video autoplay muted loop playsinline class="vid" style="width: max-content; height: 50vh;">-->
+<!--                    <source src="res/img/Montage.mp4" type="video/mp4">-->
+
+<!--                </video>&ndash;&gt;-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <br>-->
+
+<!--                <center>-->
+<!--                    <h1 class="header2-text">EMERALD KNIGHTS #10582</h1>-->
+<!--                </center>-->
+<!--            </span>-->
+<!--            <br>-->
+<!--            <img class="header-img" alt="Emerald Knights Banner" src="res/img/ek-banner-removebg-preview.png" style="z-index: 3; height: 30vw; width: 53vw; opacity: 0.4">-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        <div class="content">-->
+<!--            <br>-->
+<!--            <div class="w3-container" style="width: 35vw; float: left; margin-left: 3vw; margin-right: 5vw;">-->
+<!--            <h1 class = "header1-text" style="text-align: left; margin-left: 8.5vw;">About Us</h1>-->
+<!--            <p style="text-align: left; font-family: Monaco, monospace";> -->
+<!--                Hi! We are FTC team 10582, the Emerald Knights.-->
+<!--                <br>-->
+<!--                Every year, we compete in the FIRST Tech Challenge, a robotics competition designed for high school students to design, build, and code a robot to complete a variety of tasks that change each year.-->
+<!--                The game encourages not only learning, but also collaboration, sportsmanship, and fun as part of the creation process.-->
+
+<!--                <br>-->
+<!--                We are one of 3 teams heralding from Livingston New Jersey, and we are excited to be competing this season!-->
+<!--                Our team has been active for over 5 years, and we have made it to worlds in Detroit twice.-->
+<!--                Each year, our team has continued to learn and grow while also passing our knowledge not only to new members to the team, but also members of our community as a whole.-->
+<!--                <br>-->
+<!--                We hope to see you all at future competitions!-->
+
+<!--            </p>-->
+<!--            </div>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <img src="res/img/ekdesgin.png" alt="T-Shirt Design" style="height: auto; width: 40vw;">-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            &lt;!&ndash;-->
+<!--            <p>-->
+<!--                Exciting stuff is yet to come.-->
+
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            Give me info to put here I guess-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--            </p>-->
+<!--            &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+<!--        &lt;!&ndash;<div>-->
+<!--            <div class="content-blue" style="height: 75vw; clear: left;">-->
+<!--                <br>-->
+<!--                <h1 style="margin-top: 5vw;">Design Process</h1>-->
+<!--                <p>-->
+<!--                    Our team uses the EPIC IDEA design process.-->
+<!--                    In EPIC IDEA, we-->
+<!--                </p>-->
+<!--                <br>-->
+<!--                <div class="node popup" style="margin: auto;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Write a specific problem statement</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+<!--                    <p class="node-text">-->
+<!--                        Examine the problem-->
+<!--                    </p>-->
+<!--                </div>-->
+
+<!--                <div class="node popup" style="float: left; margin-left: 30vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Repeat the Process for Different Mechanisms</li>-->
+<!--                            <li>Improve the Current One</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+
+<!--                    <p class="node-text">-->
+<!--                        Again-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="node popup" style="float: right; margin-right: 30vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Think</li>-->
+<!--                            <li>Visualize</li>-->
+<!--                            <li>Sketch and Label</li>-->
+<!--                            <li>Share</li>-->
+<!--                            <li>Discus</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+<!--                    <p class="node-text">-->
+<!--                        Plan-->
+<!--                    </p>-->
+<!--                </div>-->
+
+<!--                <div class="node popup" style="float: left; clear: left; margin-left: 18vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Analyze the Data</li>-->
+<!--                            <li>Reflect</li>-->
+<!--                            <li>Discuss</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+<!--                    <p class="node-text">-->
+<!--                        Evaluate-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="node popup" style="float: right; clear: right; margin-right: 18vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Plug in Decision Matrix</li>-->
+<!--                            <li>List Pros/ Cons</li>-->
+<!--                            <li>Decide on a Design Prototype</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+<!--                    <p class="node-text">-->
+<!--                        Investigate-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="node popup" style="float: left; clear: left; margin-left: 30vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Test and Record Results</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+<!--                    <p class="node-text">-->
+<!--                        Data-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="node popup" style="float: right; clear: right; margin-right: 30vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Stress Test</li>-->
+<!--                            <li>Take Specific Measurements</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+
+<!--                    <p class="node-text">-->
+<!--                        CAD-->
+<!--                    </p>-->
+<!--                </div>-->
+
+<!--                <img src="res/img/loops.png" style= "margin-top: 10vw; width: 10vw; height: 10vw;" class="rotate-image">-->
+
+<!--                <div class="node popup" style="margin: auto; clear: both; margin-bottom: 5vw;">-->
+<!--                    <span class="popup-text">-->
+<!--                        <ul>-->
+<!--                            <li>Build the Mechanism</li>-->
+<!--                            <li>Write Code</li>-->
+<!--                        </ul>-->
+<!--                    </span>-->
+<!--                    <p class="node-text" style="margin-bottom: 5vh;">-->
+<!--                        Implement-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            -->
+<!--                <ul style="list-style-position: inside">-->
+<!--                    <li>Examine the problem</li>-->
+<!--                    <li>Plan</li>-->
+<!--                    <li>Investigate</li>-->
+<!--                    <li>CAD</li>-->
+<!--                    <li>Implement</li>-->
+<!--                    <li>Data</li>-->
+<!--                    <li>Evaluate</li>-->
+<!--                    <li>Again</li>-->
+<!--                </ul>-->
+
+<!--                <img src="res/img/EPIC.png">-->
+<!--            </div>-->
+<!--        </div>&ndash;&gt;-->
+
+<!--        <div>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <center>-->
+<!--                <img src = "res/img/EPIC.png" alt = "EPIC Idea" style = "height: auto; width: 40w;">-->
+<!--            </center>-->
+<!--        </div>  -->
+
+<!--        <div>-->
+<!--            <div class="content">-->
+<!--                <br>   -->
+<!--                <h1>Robot</h1>-->
+
+<!--                <p>-->
+<!--                    Each year, our robot gets a new design, and with it a new name.-->
+<!--                    This year, our robot is named BoWei (after one of our members), and features a 4 wheel-->
+<!--                    mecanum drive with a 3 part launch featuring a collection, feeder, and shooter.-->
+<!--                    BoWei also has 3 odometry pods on the bottom, ensuring he knows where he is on he field.-->
+<!--                    <br>-->
+<!--                    BoWei uses an OpenCV detector in autonomous to see how many rings there are, moving accordingly.-->
+<!--                    Other features BoWei has include a toggle for robot oriented and field oriented drive, a slow mode,-->
+<!--                    and a linear regression model that automatically sets the right shooter power to the launch based on-->
+<!--                    how far BoWei is to the goal.-->
+<!--                    <br>-->
+<!--                    <br>-->
+
+<!--                </p>-->
+<!--                <img src="res/img/bot.gif" alt = "Robot CAD Gif" style="height: auto; width: 20vw;">-->
+<!--                <img src="res/img/Robot.png" alt="Robot Picture" style = "height: auto; width: 20vw; float:left;">-->
+<!--                <img src="res/img/collect.gif" alt="Collection gif" style="height: auto; width: 20vw; float: right;">-->
+<!--            </div>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--        </div>-->
+<!--        <div class = "header-fill" style="position: relative;height: 45vh;">-->
+<!--            <span class="header-blur"></span>-->
+<!--            <img src="res/img/teampic.jpg" alt="Awards Picture" class="img-background" style="transform: translateY(2%);">-->
+
+<!--            <div class="text-on-img" style="color: gold; z-index: 3;">-->
+<!--                <h1>Awards</h1>-->
+
+<!--                <ul>-->
+<!--                    <li>2016 - 2017: Leagues Think Award</li>-->
+<!--                    <li>2017 - 2018: Leagues Inspire Award</li>-->
+<!--                    <li>2017 - 2018: NJ States Think Award</li>-->
+<!--                    <li>2017 - 2018: Super Regionals Alliance Captain 2nd Place</li>-->
+<!--                    <li>2018 - 2019: NJ States Think Award</li>-->
+<!--                    <li>2019 - 2020: Leagues Inspire Award</li>-->
+<!--                    <li>2020 - 2021: Leagues Control Award</li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--        <div class="content">-->
+<!--            <h3>-->
+<!--                See our Control Award video for states below!-->
+<!--            </h3>-->
+<!--            <iframe-->
+<!--                    width="560" height="315" src="https://www.youtube.com/embed/XZH4h8PtO7s" title="YouTube video player"-->
+<!--                    frameborder="0"-->
+<!--                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                    allowfullscreen>-->
+
+<!--            </iframe>-->
+<!--            <br>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--    <div class="footer">-->
+<!--        <p class="footer-text">-->
+<!--            © Emerald Knights 2022-23-->
+<!--        </p>-->
+<!--    </div>-->
+
+
+
+<!--    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"-->
+<!--            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+
+<!--</body>-->
+<!--</html>-->
