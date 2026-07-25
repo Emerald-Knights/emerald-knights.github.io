@@ -31,3 +31,4 @@ const href = a.getAttribute('href');
 if (href === path) a.classList.add('active');
 });
 })();
+

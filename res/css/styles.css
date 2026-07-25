@@ -4,17 +4,103 @@
 }
 
 :root{
+/* 1. Color Variables */
+    --white: #EBEBEB;
+    --off-white: #F8F9FA;
+    --mint: #D6FFDB;
+    --emerald: #009639;
+    --forest: #228B22;
+    --deep-green: #052305;
+    --rich-black: #0A0A0A;
+}
 --jade:#00a884;
 --jade-700:#067a65;
 --ink:#0b1421;
 --ink-2:#111827;
 --muted:#6b7280;
+--beige: #F5F5DC;
+--aquamarine: #85FFC7;
+--graphite: #39393A;
+--celadon: #89D89E;
+--jungleTeal: #4F815D;
+--deepTeal: #4A6F55;
+--granite: #445D4C;
+--graphite: #39393A;
 }
 
+/* Animation Definition */
+@keyframes slideUpFade {
+    0% {
+        transform: translateY(40px); /* Start lower than the navbar version */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Class to trigger the animation */
+.hero-animate {
+    animation: slideUpFade 1.2s ease-out forwards;
+}
+
+/* 1. Define the animation */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Create the trigger class */
+.slide-in {
+    animation: slideInUp 1s ease-out forwards;
+}
+
+/* 3. Initial state for things that haven't animated yet
+   (Optional: only if you want them invisible until the animation starts) */
+.hero-animate, .slide-in {
+    opacity: 0;
+}
+
+/* 4. Delays for a sequenced "waterfall" look */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+
+
+/* 2. Text Color Classes */
+.text-white { color: var(--white) !important; }
+.text-off-white { color: var(--off-white) !important; }
+.text-mint { color: var(--mint) !important; }
+.text-emerald { color: var(--emerald) !important; }
+.text-forest { color: var(--forest) !important; }
+.text-deep-green { color: var(--deep-green) !important; }
+.text-black { color: var(--rich-black) !important; }
+
+/* 3. Background Color Classes */
+.bg-white { background-color: var(--white) !important; }
+.bg-off-white { background-color: var(--off-white) !important; }
+.bg-mint { background-color: var(--mint) !important; }
+.bg-emerald { background-color: var(--emerald) !important; }
+.bg-forest { background-color: var(--forest) !important; }
+.bg-deep-green { background-color: var(--deep-green) !important; }
+.bg-black { background-color: var(--rich-black) !important; }
 
 body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background-color:#fafafa; }
 .brand-title{ font-family:'Orbitron', monospace; letter-spacing:.5px; }
-
+.brand-title {
+    font-family: 'Orbitron', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
 
 .brand-gradient{ background: linear-gradient(135deg, var(--ink), var(--ink-2)); }
 .hero{ background: radial-gradient(1200px 600px at 50% -10%, rgba(0,168,132,.25), transparent 40%), linear-gradient(135deg, var(--ink), var(--ink-2)); }
@@ -27,6 +113,22 @@ body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helveti
 .bg-jade{ background-color: var(--jade)!important; }
 .bg-jade-subtle{ background-color: rgba(0,168,132,.12)!important; }
 .text-jade{ color: var(--jade)!important; }
+
+.text-beige{ color: var(--beige)!important; }
+.text-celadon{ color: var(--celadon)!important; }
+.text-aquamarine{ color: var(--aquamarine)!important; }
+.text-jungleTeal{ color: var(--jungleTeal)!important; }
+.text-deepTeal{ color: var(--deepTeal)!important; }
+.text-granite{ color: var(--granite)!important; }
+.text-graphite{ color: var(--graphite)!important; }
+
+.bg-beige{ background-color: var(--beige)!important; }
+.bg-graphite{ background-color: var(--graphite)!important; }
+.bg-granite{ background-color: var(--granite)!important; }
+.bg-deepTeal{ background-color: var(--deepTeal)!important; }
+.bg-jungleTeal{ background-color: var(--jungleTeal)!important; }
+.bg-celadon{ background-color: var(--celadon)!important; }
+.bg-aquamarine{ background-color: var(--aquamarine)!important; }
 
 
 .btn-jade{ background: var(--jade); color:#fff; border: none; }
@@ -42,8 +144,25 @@ body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helveti
 }
 
 
-.footer-link{ text-decoration:none; }
-.footer-link:hover{ color:#fff!important; }
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+  /* Import the custom Racer font */
+  @font-face {
+      font-family: 'Racer';
+      src: url('../fonts/racer.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  /* Apply Racer font to the hero title class */
+  .hero-title-custom {
+      font-family: 'Racer', sans-serif !important;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+  }
+
 
 
 .hover-lift{ transition: transform .2s ease, box-shadow .2s ease; }
@@ -55,7 +174,42 @@ body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helveti
 
 
 .navbar .nav-link.active{ font-weight:700; }
+/* Using Montserrat as the example */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    line-height: 1.6;
+}
 
+h1, h2, h3, .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px; /* Tighter letter spacing looks more modern */
+    color: #0A0A0A;
+}
+
+/* Use the Emerald only for accents */
+.text-emerald {
+    color: #009639;
+}
+
+/* Minimalist buttons have no gradients and thin borders */
+.btn-minimal {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    border-radius: 0px; /* Sharp corners look more minimalistic */
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-minimal:hover {
+    background-color: #009639;
+    color: #FFFFFF;
+}
 ul {
     text-align: center;
     list-style-position: inside;
@@ -80,3 +234,468 @@ ul {
 /* Small utility tweaks */
 .card-title{ font-weight:700; }
 .badge.bg-jade{ background: var(--jade); }
+
+/* Solid Emerald Button with Hover Glow */
+.btn-emerald {
+    background-color: #009639; /* Signature Emerald Green */
+    color: #FFFFFF !important; /* White text for contrast */
+    border: 2px solid #009639;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-emerald:hover {
+    background-color: #00a840; /* Slightly brighter green on hover */
+    color: #FFFFFF !important;
+    border-color: #00a840;
+    box-shadow: 0 6px 15px rgba(0, 150, 57, 0.3); /* Stronger emerald glow */
+    transform: translateY(-2px);
+}
+
+/* Force Navbar links to use Montserrat (Regular & Sentence Case) */
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: none !important; /* Removes Uppercase */
+    font-weight: 500 !important;     /* Changes Bold to Medium/Regular */
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+}
+
+ body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #0A0A0A; }
+        h1, h2, h3, h4, h5, .brand-title { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; }
+        .bg-black { background-color: #0A0A0A !important; }
+        .bg-off-white { background-color: #F8F9FA !important; }
+        .text-emerald { color: #009639 !important; }
+
+        .section-title { letter-spacing: 2px; margin-bottom: 2rem; }
+
+/* Navbar link hover animation - Grow from Middle */
+        .navbar-nav .nav-item {
+            margin-left: 15px; /* Increase this number for even more space */
+        }
+
+        .navbar-nav .nav-link {
+            position: relative;
+            padding-bottom: 2px;
+            padding-left: 5px;  /* Subtle internal padding */
+            padding-right: 5px;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #009639;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(-50%);
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Thin line at bottom of navbar */
+/* Change this in your <style> block */
+.navbar {
+    /* Changed from 3px solid to 1px with lower opacity */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: background-color 0.3s ease;
+}
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(41%) sepia(98%) saturate(2158%) hue-rotate(125deg) brightness(95%) contrast(101%);
+}
+                .counter {
+            display: inline-block;
+            min-width:1ch; /* Prevents layout shifting during count */
+        }
+        .tracking-widest {
+            letter-spacing: 0.2rem;
+        }
+
+               /* History Button - Gray Normally, Green Outline on Hover */
+.btn-history-animate {
+    background-color: #E9ECEF !important; /* Light Gray base */
+    color: #495057 !important;            /* Dark Gray text */
+    border: 1px solid #dee2e6 !important; /* Subtle gray border */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    /* DARKER NORMAL SHADOW */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn-history-animate:hover {
+    background-color: #e9ecef !important; /* Keep the same gray background */
+    color: #009639 !important;            /* Emerald text */
+    border: 1px solid #009639 !important; /* Emerald outline */
+    transform: translateY(-2px) scale(1.02);
+
+    /* Emerald Glow Shadow on Hover */
+    box-shadow: 0 8px 20px rgba(0, 150, 57, 0.25) !important;
+}
+
+
+        /* 1. Import the custom Racer font */
+@font-face {
+    font-family: 'Racer';
+    src: url('res/fonts/racer.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. Apply it specifically to the Emerald Knights title */
+.hero-title-custom {
+    font-family: 'Racer', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Increased spacing often looks better with racer fonts */
+}
+
+       /* 1. Base setup for the cards */
+.carousel-card-box, .carousel-card-light {
+    position: relative;
+    border: 1px solid rgba(0, 209, 102, 0.1); /* Subtle base border */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* 2. The Outline Layer (Hidden by default) */
+.carousel-card-box::before, .carousel-card-light::before {
+    content: '';
+    position: absolute;
+    /* Positioned slightly outside to cover the original border */
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    border: 3px solid #00D166; /* Your emerald green */
+    border-radius: 14px; /* Slightly larger to match the outer edge */
+    z-index: 5;
+    pointer-events: none;
+
+    /* Simple fade instead of spreading animation */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 3. Hover Trigger: Simple Outline and Lift */
+.carousel-card-box:hover, .carousel-card-light:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 209, 102, 0.15);
+}
+
+.carousel-card-box:hover::before, .carousel-card-light:hover::before {
+    opacity: 1; /* Shows the outline instantly/with a quick fade */
+}
+
+/* 4. Ensure internal content is clickable */
+.carousel-card-box > *, .carousel-card-light > * {
+    position: relative;
+    z-index: 1;
+}
+        /* Custom Nav Buttons for Carousel */
+.custom-nav-btn {
+    background: transparent;
+    border: 1px solid rgba(0, 150, 57, 0.5); /* Subtle Emerald Border */width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Light Version of the Carousel Box */
+.carousel-card-light {
+    background-color: #FFFFFF !important; /* White Box */
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Softer shadow for white */
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(0, 150, 57, 0.2); /* Thin green border */
+    overflow: visible;
+}
+
+.carousel-card-light:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 150, 57, 0.1);
+}
+
+
+
+.carousel-card-light:hover::before {
+    width: calc(100% + 2px);
+}
+
+/* Arrow Icon Base Color (Emerald) */
+.nav-icon-small {
+    width: 16px !important;
+    height: 16px !important;
+    filter: invert(41%) sepia(98%) saturate(2158%) hue-rotate(125deg) brightness(95%) contrast(101%);
+    transition: filter 0.3s ease;
+}
+
+/* Hover Effect: Turns White */
+.custom-nav-btn:hover {
+    border-color: #009639;
+    background: rgba(0, 150, 57, 0.1);
+}
+.custom-nav-btn:hover .nav-icon-small {
+    filter: invert(100%);
+}
+
+/* Indicators (Dots) Reset */
+.custom-indicators {
+    position: relative !important;
+    margin: 0 !important;
+    display: flex !important;
+    gap: 8px;
+}
+
+.custom-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #009639 !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 0.3;
+}
+
+.custom-indicators .active {
+    opacity: 1 !important;
+}
+
+        /* Timeline Styling */
+.timeline-content {
+    padding-bottom: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #009639;
+    border: 3px solid #F8F9FA; /* Matches the bg-off-white */
+    border-radius: 50%;
+    left: -10px; /* Aligns perfectly over the 3px border-start line */
+    top: 5px;
+    box-shadow: 0 0 8px rgba(0, 150, 57, 0.4);
+}
+
+.timeline-item:last-child .timeline-content {
+    border-left: 3px solid transparent !important; /* Ends the line at the last item */
+}
+
+        /* Container that allows horizontal scrolling */
+.impact-scroll-container {display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 5px;
+    /* Hide scrollbar for Chrome/Safari */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+}
+
+.impact-scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+/* Individual Cards */
+.impact-card {
+    min-width: 300px; /* Width of each box */
+    max-width: 300px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 150, 57, 0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.impact-card:hover {
+    transform: translateY(-10px);
+    border-color: #00D166;
+    box-shadow: 0 15px 35px rgba(0, 209, 102, 0.15);
+}
+
+.impact-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.impact-card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.impact-card-body h4 {
+    font-size: 0.9rem !important; /* Smaller pixel font for cards */
+    margin-bottom: 5px;
+}
+
+        /* Floating Navigation Buttons for the Scroll Track */
+.scroll-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;background: #FFFFFF;
+    border: 1px solid rgba(0, 150, 57, 0.3);
+    border-radius: 50%;
+    color: #009639;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100; /* Ensure it stays above cards */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.scroll-nav-btn:hover {
+    background: #009639;
+    color: #FFFFFF;
+    box-shadow: 0 6px 15px rgba(0, 150, 57, 0.3);
+}
+
+/* Position them partially outside the container */
+.scroll-nav-btn.left {
+    left: -45px;
+}
+
+.scroll-nav-btn.right {
+    right: -45px;
+}
+
+/* Hide arrows on mobile touch devices */
+@media (max-width: 768px) {
+    .scroll-nav-btn { display: none; }
+}
+
+        /* Account for the sticky navbar height when clicking anchor links */
+html {
+    scroll-behavior: smooth;
+    /* Adjust the 80px value based on your actual navbar height */
+    scroll-padding-top: 60px;
+}
+
+/* Ensure sections have high enough IDs to be targeted correctly */
+section[id] {
+    scroll-margin-top: 10px;
+}
+/* 1. Define the floating bounce animation */
+@keyframes softBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Moves up 15 pixels */
+    }
+}
+
+/* 2. Create the class to apply the animation */
+.animate-bounce {
+    animation: softBounce 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   SCROLL TO TOP BUTTON
+   ========================================================================== */
+/* ==========================================================================
+   SCROLL TO TOP BUTTON (Refined for Smoothness)
+   ========================================================================== */
+#scrollTopBtn {    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background-color: var(--emerald);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+
+    /* THE FIX: Use opacity and visibility instead of display:none */
+    display: flex; /* Always flex so alignment works */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); /* Starts slightly lower for a "rise" effect */
+
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    /* Smooth transition for every property */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When visible, fade in and slide up */
+#scrollTopBtn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Scroll to Top Button Hover State */
+#scrollTopBtn:hover {
+    background-color: #FFFFFF !important;
+    color: var(--emerald) !important;
+    border: 2px solid var(--emerald);
+    transform: translateY(-5px); /* Lift higher on hover */
+    box-shadow: 0 6px 20px rgba(0, 150, 57, 0.4);
+}
+
+/* ==========================================================================
+   TEAM MEMBER CARD ANIMATIONS (Smoothed)
+   ========================================================================== */
+.member-card {
+    /* Transition all properties: shadow, transform, and border */
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle starting border */
+}
+
+/* Inner image container logic */
+.member-card .card-img-top {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* The Hover State: Physical Lift + Deeper Shadow */
+.member-card:hover {
+    transform: translateY(-10px); /* Smoothly lifts up */
+    box-shadow: 0 20px 40px rgba(0, 150, 57, 0.15) !important;
+    border-color: var(--emerald) !important; /* Glows green on the edge */
+}
+
+/* Image stays static inside the lifting card */
+.member-card:hover .card-img-top {
+    transform: none;
+}
+
+
+ /* Minimalist Animation Styles */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .slide-in-visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: 0.2s; }
+    .delay-2 { transition-delay: 0.4s; }
+
