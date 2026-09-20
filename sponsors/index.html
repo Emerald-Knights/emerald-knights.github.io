@@ -20,25 +20,22 @@
             background: radial-gradient(circle at 50% 50%, #dcf5dc 0%, #ffffff 100%);
         }
         /* Specific sponsor logo styling */
-        /* Updated: Logos are now colored normally by default */
         .sponsor-logo-img {
             max-height: 80px;
             width: auto;
             transition: all 0.4s ease;
-            filter: grayscale(0%); /* Changed from 100% to 0% */
-            opacity: 1;            /* Changed from 0.7 to 1 */
+            filter: grayscale(0%);
+            opacity: 1;
         }
 
         .member-card:hover .sponsor-logo-img {
-            /* Kept the scale effect for a premium feel */
             transform: scale(1.05);
         }
-
     </style>
 </head>
 <body>
 
-<!-- Navbar (Matches Homepage) -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm"
      style="background-color: rgba(5, 35, 5, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
     <div class="container-fluid px-lg-5">
@@ -58,7 +55,6 @@
                 <li class="nav-item"><a class="nav-link active" href="index.html">Sponsors</a></li>
                 <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
                 <li class="nav-item"><a class="btn btn-outline-light ms-lg-2 px-3" target="_blank" href="https://github.com/Emerald-Knights">GitHub</a></li>
-
             </ul>
         </div>
     </div>
@@ -79,13 +75,27 @@
 
         <div class="row g-4 justify-content-center reveal">
 
-            <!-- 1. Nokia Bell Labs -->
+            <!-- 1. FabWorks -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://www.fabworks.com" target="_blank" class="text-decoration-none">
+                    <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
+                        <div style="height: 110px; display: flex; align-items: center; justify-content: center;" class="mb-3">
+                            <img src="../res/img/fabworks.jpg" alt="FabWorks" class="sponsor-logo-img" style="max-height: 110px;">
+                        </div>
+                        <h5 class="fw-bold text-deep-green mt-2 mb-1" style="font-size: 1.1rem;">FabWorks</h5>
+                        <!-- Discount Code Tag -->
+                        <span class="badge bg-mint text-emerald small py-2 px-3 mt-2" style="border-radius: 8px;">
+                5% OFF CODE: <strong>FTC10582</strong>
+            </span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 2. Nokia Bell Labs -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://www.bell-labs.com" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
-                        <!-- Container stays 110px to keep text in line -->
                         <div style="height: 110px; display: flex; align-items: center; justify-content: center;" class="mb-3">
-                            <!-- Reduced image size to 85px -->
                             <img src="../res/img/nokiabelllabs.png" alt="Nokia Bell Labs" class="sponsor-logo-img" style="max-height: 85px;">
                         </div>
                         <h5 class="fw-bold text-deep-green mt-2" style="font-size: 1.1rem;">Nokia Bell Labs</h5>
@@ -93,7 +103,7 @@
                 </a>
             </div>
 
-            <!-- 2. C2 Education -->
+            <!-- 3. C2 Education -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://www.c2educate.com" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
@@ -105,7 +115,7 @@
                 </a>
             </div>
 
-            <!-- 3. Tutor Shack -->
+            <!-- 4. Tutor Shack -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://tutorshack.com" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
@@ -117,7 +127,7 @@
                 </a>
             </div>
 
-            <!-- 4. Code Ninjas -->
+            <!-- 5. Code Ninjas -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://www.codeninjas.com" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
@@ -129,23 +139,19 @@
                 </a>
             </div>
 
-            <!-- 5. Embrace Tutoring -->
+            <!-- 6. Embrace Tutoring -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://www.embracetutoring.com" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
-                        <!-- Standardized container height -->
                         <div style="height: 110px; display: flex; align-items: center; justify-content: center;" class="mb-3">
-                            <img src="../res/img/embracetutoring.jpeg"
-                                 alt="Embrace Tutoring"
-                                 class="sponsor-logo-img"
-                                 style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                            <img src="../res/img/embracetutoring.jpeg" alt="Embrace Tutoring" class="sponsor-logo-img" style="max-height: 100%; max-width: 100%; object-fit: contain;">
                         </div>
                         <h5 class="fw-bold text-deep-green mt-2" style="font-size: 1.1rem;">Embrace Tutoring</h5>
                     </div>
                 </a>
             </div>
 
-            <!-- 6. Klaxon -->
+            <!-- 7. Klaxon -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="#" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
@@ -157,7 +163,7 @@
                 </a>
             </div>
 
-            <!-- 7. Kettering University -->
+            <!-- 8. Kettering University -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://www.kettering.edu" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
@@ -169,7 +175,7 @@
                 </a>
             </div>
 
-            <!-- 8. My Admissions Sherpa -->
+            <!-- 9. My Admissions Sherpa -->
             <div class="col-12 col-md-6 col-lg-3">
                 <a href="https://myadmissionssherpa.com" target="_blank" class="text-decoration-none">
                     <div class="card member-card h-100 border-0 shadow-sm p-4 text-center" style="border-radius: 15px; border: none !important;">
@@ -194,57 +200,48 @@
     </div>
 </section>
 
-<footer class="py-5 border-top border-emerald"
-        style="background-color: #f1f8f1; border-width: 1px !important;">    <div class="container">
-    <div class="row align-items-center">
-
-        <!-- Left Side: Logo & Brand -->
-        <div class="col-md-4 mb-4 mb-md-0">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <!-- Logo remains clear -->
-                    <img src="res/img/ek-logo.png" alt="EK Logo" style="height: 80px; width: 80px; object-fit: contain;">
-                </div>
-                <div class="col">
-                    <h5 class="text-emerald mb-1" style="letter-spacing: 2px; font-size: 1.2rem;">FTC 10582</h5>
-                    <p class="small text-secondary mb-0">Building robots, fostering community, and engineering the future.</p>
+<!-- Footer -->
+<footer class="py-5 border-top border-emerald" style="background-color: #f1f8f1; border-width: 1px !important;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <img src="../res/img/ek-logo.png" alt="EK Logo" style="height: 80px; width: 80px; object-fit: contain;">
+                    </div>
+                    <div class="col">
+                        <h5 class="text-emerald mb-1" style="letter-spacing: 2px; font-size: 1.2rem;">FTC 10582</h5>
+                        <p class="small text-secondary mb-0">Building robots, fostering community, and engineering the future.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Middle: Quick Links -->
-        <div class="col-md-4 text-center mb-4 mb-md-0">
-            <h6 class="text-emerald text-uppercase small fw-bold mb-3">Contact Us</h6>
-            <div class="d-flex flex-column align-items-center gap-2">
-                <!-- Changed text-white-50 to text-secondary -->
-                <a href="https://www.instagram.com/ftc10582/?hl=en" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
-                    <img src="res/img/instagram-removebg-preview.png" alt="Instagram" style="height: 25px; width: auto; margin-right: 2px; opacity: 0.7;">
-                    @ftc10582
-                </a>
-                <a href="mailto:ftc10582@gmail.com" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
-                    <img src="res/img/email-icon2.png" alt="Email" style="height: 25px; width: auto; margin-right: 4px; opacity: 0.7;">
-                    ftc10582@gmail.com
-                </a>
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h6 class="text-emerald text-uppercase small fw-bold mb-3">Contact Us</h6>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <a href="https://www.instagram.com/ftc10582/?hl=en" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
+                        <img src="../res/img/instagram-removebg-preview.png" alt="Instagram" style="height: 25px; width: auto; margin-right: 2px; opacity: 0.7;">
+                        @ftc10582
+                    </a>
+                    <a href="mailto:ftc10582@gmail.com" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
+                        <img src="../res/img/email-icon2.png" alt="Email" style="height: 25px; width: auto; margin-right: 4px; opacity: 0.7;">
+                        ftc10582@gmail.com
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <!-- Right Side: Copyright -->
-        <div class="col-md-4 text-center text-md-end">
-            <p class="small mb-0 text-secondary" style="letter-spacing: 2px;">
-                © Emerald Knights 2025-26. <br>All Rights Reserved.
-            </p>
+            <div class="col-md-4 text-center text-md-end">
+                <p class="small mb-0 text-secondary" style="letter-spacing: 2px;">
+                    © Emerald Knights 2026-27. <br>All Rights Reserved.
+                </p>
+            </div>
         </div>
     </div>
-</div>
 </footer>
 
-<!-- Scroll to Top -->
 <button id="scrollTopBtn" onclick="scrollToTop()" title="Go to top"><span>&uarr;</span></button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Reveal Animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -255,15 +252,6 @@
 
         document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-        // Forced reveal for top elements
-        setTimeout(() => {
-            document.querySelectorAll('.reveal').forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight) el.classList.add('slide-in-visible');
-            });
-        }, 150);
-
-        // Scroll Top Button
         const scrollTopBtn = document.getElementById("scrollTopBtn");
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) scrollTopBtn.classList.add("visible");

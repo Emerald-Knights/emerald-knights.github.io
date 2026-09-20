@@ -18,12 +18,10 @@
     <style>
         .page-header {
             background: radial-gradient(circle at 50% 50%, #dcf5dc 0%, #ffffff 100%);
-            /* Border removed */
         }
         .calendar-card {
             border-radius: 15px;
             overflow: hidden;
-            /* Border removed */
         }
         iframe {
             width: 100%;
@@ -31,24 +29,21 @@
             border: none;
         }
 
+        /* Fix for clipped shadows on the left and right */
+        .impact-scroll-container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
 
-
-    /* Fix for clipped shadows on the left and right */
-.impact-scroll-container {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-
-/* Ensure the first card aligns correctly with the new padding */
-.impact-card:first-child {
-    margin-left: 0;
-}
-
+        /* Ensure the first card aligns correctly with the new padding */
+        .impact-card:first-child {
+            margin-left: 0;
+        }
     </style>
 </head>
 <body>
 
-<!-- Navbar (Matches Home Exactly) -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm"
      style="background-color: rgba(5, 35, 5, 0.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
     <div class="container-fluid px-lg-5">
@@ -74,25 +69,22 @@
 </nav>
 
 <header class="text-center hero-video-bg border-bottom reveal d-flex align-items-center"
-        style="position: relative; overflow: hidden; background: linear-gradient(180deg, #ffffff 0%, #dcf5dc 100%); min-height: 40vh;"> <!-- Reduced from 60vh to 40vh -->
-
-    <!-- Optional: Keep the bot.gif visible underneath the gradient -->
-    <div class="container py-4 reveal" style="position: relative; z-index: 2;"> <!-- Reduced from py-5 to py-4 -->
-        <h1 class="font-pixel text-emerald mb-2" style="font-size: clamp(2.5rem, 6vw, 4rem);">2025-2026 Season</h1> <!-- Slightly smaller font range -->
+        style="position: relative; overflow: hidden; background: linear-gradient(180deg, #ffffff 0%, #dcf5dc 100%); min-height: 40vh;">
+    <div class="container py-4 reveal" style="position: relative; z-index: 2;">
+        <h1 class="font-pixel text-emerald mb-2" style="font-size: clamp(2.5rem, 6vw, 4rem);">2026-2027 Season</h1>
         <p class="lead mx-auto mb-0" style="max-width: 700px; color: #052305; font-weight: 600; font-size: 1.1rem;">
             Documenting our technical evolution and competitive journey.
         </p>
     </div>
 </header>
 
-<!-- Line 81 -->
-<main class="py-5" style="background: radial-gradient(circle at 50% 50%, #f4fbf4 0%, #F8F9FA 100%);">    <div class="container">
+<main class="py-5" style="background: radial-gradient(circle at 50% 50%, #f4fbf4 0%, #F8F9FA 100%);">
+    <div class="container">
         <div class="row g-5 align-items-stretch">
 
             <!-- Calendar Section -->
             <div class="col-lg-8 reveal delay-1 d-flex flex-column">
                 <h3 class="fw-bold mb-4">Team Calendar</h3>
-                <!-- Removed border and matched 'member-card' logic -->
                 <div class="calendar-card member-card shadow-sm h-100"
                      style="border-radius: 15px; overflow: hidden; border: none !important;">
                     <iframe src="https://calendar.google.com/calendar/embed?src=8tj4lfq5745f4t98da8ejtb974%40group.calendar.google.com&ctz=America%2FNew_York"></iframe>
@@ -102,21 +94,19 @@
             <!-- Recent Updates Section -->
             <div class="col-lg-4 reveal delay-2 d-flex flex-column">
                 <h3 class="fw-bold mb-4">Latest Updates</h3>
-                <!-- Added shadow-sm and border:none to match the calendar exactly -->
                 <div class="card member-card border-0 bg-off-white p-4 h-100 d-flex flex-column shadow-sm"
                      style="border-radius: 15px; border: none !important;">
                     <div class="mb-4">
                         <span class="badge bg-mint text-emerald mb-2">UPCOMING</span>
-                        <h5 class="fw-bold mb-1"> Healthy Kids Day </h5>
-                        <p class="small text-secondary">March 2026 • West Essex YMCA </p>
+                        <h5 class="fw-bold mb-1">Healthy Kids Day</h5>
+                        <p class="small text-secondary">March 2027 • West Essex YMCA</p>
                     </div>
                     <div class="mb-4">
                         <span class="badge bg-secondary text-white mb-2">COMPLETED</span>
                         <h5 class="fw-bold mb-1">League Meet</h5>
-                        <p class="small text-secondary">February 2026 • Livingston High School</p>
+                        <p class="small text-secondary">February 2027 • Livingston High School</p>
                     </div>
 
-                    <!-- mt-auto pushes this link to the bottom -->
                     <div class="mt-auto pt-3">
                         <a href="../impacts/index.html" class="text-emerald fw-bold text-decoration-none small">VIEW FULL IMPACT REPORT →</a>
                     </div>
@@ -131,10 +121,7 @@
 <section id="off-season" class="py-5" style="background: radial-gradient(circle at 25% 50%, #f4fbf4 0%, #ffffff 100%);">
     <div class="container">
         <h2 class="section-title text-center mb-5 font-pixel text-emerald">Off-Season & Training</h2>
-
         <div class="row g-4 reveal">
-            <!-- Training Card -->
-
             <div class="col-md-6">
                 <div class="card member-card border-0 p-4 h-100 shadow-sm" style="border-radius: 15px; border: none !important;">
                     <div class="d-flex align-items-center mb-3">
@@ -144,12 +131,10 @@
                         <h5 class="fw-bold mb-0 text-deep-green">Mock Season</h5>
                     </div>
                     <p class="small text-secondary mb-0">
-                        During the summer, our leads host intensive training bootcamps. New members learn the fundamentals of **Java programming**, **Fusion 360 CAD modeling**, and precision mechanical assembly to hit the ground running in September.
+                        During the summer, our leads host intensive training bootcamps. New members learn the fundamentals of **Java programming**, **Fusion 360 CAD modeling**, and precision mechanical assembly.
                     </p>
                 </div>
             </div>
-
-            <!-- Outreach/Cadet Card -->
             <div class="col-md-6">
                 <div class="card member-card border-0 p-4 h-100 shadow-sm" style="border-radius: 15px; border: none !important;">
                     <div class="d-flex align-items-center mb-3">
@@ -159,7 +144,7 @@
                         <h5 class="fw-bold mb-0 text-deep-green">Cadet Mentorship</h5>
                     </div>
                     <p class="small text-secondary mb-0">
-                        Our team legacy is built on mentorship. Our off-season program pairs veteran members with local FLL teams and middle school students, fostering a passion for robotics and ensuring a sustainable pipeline of talent.
+                        Our team legacy is built on mentorship. Our off-season program pairs veteran members with local FLL teams and middle school students.
                     </p>
                 </div>
             </div>
@@ -167,32 +152,37 @@
     </div>
 </section>
 
-<!-- Past Seasons Section (Full Width Horizontal Scroll) -->
+<!-- Past Seasons Section -->
 <section id="past-seasons" class="py-5 bg-off-white border-top">
     <div class="container">
         <h2 class="section-title text-center mb-5 font-pixel text-emerald">Past Seasons</h2>
 
-        <!-- Scroll Wrapper -->
         <div class="position-relative px-4">
-
-            <!-- Left Arrow -->
             <button id="seasonLeftArrow" class="scroll-nav-btn left" onclick="scrollSeason(-320)" aria-label="Scroll Left" style="display: none;">
                 <span>&lsaquo;</span>
             </button>
 
             <div class="impact-scroll-container" id="seasonScrollTrack">
-                <!-- Season 1: 23-24 -->
+                <!-- Current Season: 26-27 -->
+                <div class="impact-card">
+                    <div class="impact-card-body d-flex flex-column h-100">
+                        <h5 class="text-emerald fw-bold mb-1">2026 - 2027</h5>
+                        <p class="small text-uppercase tracking-widest text-muted mb-3">BIOBUZZ</p>
+                        <p class="text-secondary small">Advancing biological-inspired modular design and high-efficiency scoring mechanisms.</p>
+                        <hr class="opacity-10 mt-auto">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-mint text-emerald px-3 py-2" style="border-radius: 4px;">ACTIVE</span>
+                            <small class="text-muted italic">Robot: BioBuzz</small>
+                        </div>
+                    </div>
+                </div>
 
-
+                <!-- Season: 25-26 -->
                 <div class="impact-card">
                     <div class="impact-card-body d-flex flex-column h-100">
                         <h5 class="text-emerald fw-bold mb-1">2025 - 2026</h5>
                         <p class="small text-uppercase tracking-widest text-muted mb-3">DECODE</p>
-                        <p class="text-secondary small">Ranked 5th in our division. Focused on high-speed pixel placement and a reliable drone launcher.</p>
-
-                        <!-- Small Image added underneath description -->
-<!--                        <img src="../res/img/placeholder.jpg" class="img-fluid rounded mb-3" style="height: 100px; width: 100%; object-fit: cover;" alt="Robot Preview">-->
-
+                        <p class="text-secondary small">Ranked 3rd in our division. Focused on high-speed pixel placement and a reliable drone launcher.</p>
                         <hr class="opacity-10 mt-auto">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-mint text-emerald px-3 py-2" style="border-radius: 4px;">RANKED #3</span>
@@ -201,14 +191,12 @@
                     </div>
                 </div>
 
-
+                <!-- Season: 24-25 -->
                 <div class="impact-card">
                     <div class="impact-card-body d-flex flex-column h-100">
                         <h5 class="text-emerald fw-bold mb-1">2024 - 2025</h5>
                         <p class="small text-uppercase tracking-widest text-muted mb-3">Into the Deep</p>
                         <p class="text-secondary small">Ranked 5th in our division. Focused on high-speed pixel placement and a reliable drone launcher.</p>
-<!--                        <img src="../res/img/placeholder.jpg" class="img-fluid rounded mb-3" style="height: 100px; width: 100%; object-fit: cover;" alt="Robot Preview">-->
-
                         <hr class="opacity-10 mt-auto">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-mint text-emerald px-3 py-2" style="border-radius: 4px;">RANKED #3</span>
@@ -217,14 +205,12 @@
                     </div>
                 </div>
 
-
+                <!-- Season: 23-24 -->
                 <div class="impact-card">
                     <div class="impact-card-body d-flex flex-column h-100">
                         <h5 class="text-emerald fw-bold mb-1">2023 - 2024</h5>
                         <p class="small text-uppercase tracking-widest text-muted mb-3">Centerstage</p>
                         <p class="text-secondary small">Ranked 5th in our division. Focused on high-speed pixel placement and a reliable drone launcher.</p>
-<!--                        <img src="../res/img/placeholder.jpg" class="img-fluid rounded mb-3" style="height: 100px; width: 100%; object-fit: cover;" alt="Robot Preview">-->
-
                         <hr class="opacity-10 mt-auto">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-mint text-emerald px-3 py-2" style="border-radius: 4px;">RANKED #5</span>
@@ -233,14 +219,12 @@
                     </div>
                 </div>
 
-                <!-- Season 2: 22-23 -->
+                <!-- Season: 22-23 -->
                 <div class="impact-card">
                     <div class="impact-card-body d-flex flex-column h-100">
                         <h5 class="text-emerald fw-bold mb-1">2022 - 2023</h5>
                         <p class="small text-uppercase tracking-widest text-muted mb-3">PowerPlay</p>
                         <p class="text-secondary small">Developed a customized vertical lift system and utilized Odo-pods for precise field positioning.</p>
-<!--                        <img src="../res/img/placeholder.jpg" class="img-fluid rounded mb-3" style="height: 100px; width: 100%; object-fit: cover;" alt="Robot Preview">-->
-
                         <hr class="opacity-10 mt-auto">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-mint text-emerald px-3 py-2" style="border-radius: 4px;">FINALIST</span>
@@ -249,14 +233,12 @@
                     </div>
                 </div>
 
-                <!-- Season 3: 21-22 -->
+                <!-- Season: 21-22 -->
                 <div class="impact-card">
                     <div class="impact-card-body d-flex flex-column h-100">
                         <h5 class="text-emerald fw-bold mb-1">2021 - 2022</h5>
                         <p class="small text-uppercase tracking-widest text-muted mb-3">Freight Frenzy</p>
                         <p class="text-secondary small">Reached the NJ State Championships. Known for our unique intake mechanism and heavy-duty drivetrain.</p>
-<!--                        <img src="../res/img/placeholder.jpg" class="img-fluid rounded mb-3" style="height: 100px; width: 100%; object-fit: cover;" alt="Robot Preview">-->
-
                         <hr class="opacity-10 mt-auto">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-mint text-emerald px-3 py-2" style="border-radius: 4px;">STATE QUALIFIER</span>
@@ -265,14 +247,12 @@
                     </div>
                 </div>
 
-                <!-- Season 4: Legacy (Optional Addition) -->
+                <!-- Legacy Years -->
                 <div class="impact-card">
                     <div class="impact-card-body d-flex flex-column h-100">
                         <h5 class="text-emerald fw-bold mb-1">2015 - 2021</h5>
                         <p class="small text-uppercase tracking-widest text-muted mb-3">The Legacy Years</p>
                         <p class="text-secondary small">From our founding to multiple World Championship appearances in Detroit. Over a decade of excellence.</p>
-<!--                        <img src="../res/img/placeholder.jpg" class="img-fluid rounded mb-3" style="height: 100px; width: 100%; object-fit: cover;" alt="Robot Preview">-->
-
                         <hr class="opacity-10 mt-auto">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="badge bg-secondary text-white px-3 py-2" style="border-radius: 4px;">LEGACY</span>
@@ -282,7 +262,6 @@
                 </div>
             </div>
 
-            <!-- Right Arrow -->
             <button id="seasonRightArrow" class="scroll-nav-btn right" onclick="scrollSeason(320)" aria-label="Scroll Right">
                 <span>&rsaquo;</span>
             </button>
@@ -294,85 +273,68 @@
     </div>
 </section>
 
-<footer class="py-5 border-top border-emerald"
-        style="background-color: #f1f8f1; border-width: 1px !important;">    <div class="container">
-    <div class="row align-items-center">
-
-        <!-- Left Side: Logo & Brand -->
-        <div class="col-md-4 mb-4 mb-md-0">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <!-- Logo remains clear -->
-                    <img src="../res/img/ek-logo.png" alt="EK Logo" style="height: 80px; width: 80px; object-fit: contain;">
-                </div>
-                <div class="col">
-                    <h5 class="text-emerald mb-1" style="letter-spacing: 2px; font-size: 1.2rem;">FTC 10582</h5>
-                    <p class="small text-secondary mb-0">Building robots, fostering community, and engineering the future.</p>
+<footer class="py-5 border-top border-emerald" style="background-color: #f1f8f1; border-width: 1px !important;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <img src="../res/img/ek-logo.png" alt="EK Logo" style="height: 80px; width: 80px; object-fit: contain;">
+                    </div>
+                    <div class="col">
+                        <h5 class="text-emerald mb-1" style="letter-spacing: 2px; font-size: 1.2rem;">FTC 10582</h5>
+                        <p class="small text-secondary mb-0">Building robots, fostering community, and engineering the future.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Middle: Quick Links -->
-        <div class="col-md-4 text-center mb-4 mb-md-0">
-            <h6 class="text-emerald text-uppercase small fw-bold mb-3">Contact Us</h6>
-            <div class="d-flex flex-column align-items-center gap-2">
-                <!-- Changed text-white-50 to text-secondary -->
-                <a href="https://www.instagram.com/ftc10582/?hl=en" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
-                    <img src="../res/img/instagram-removebg-preview.png" alt="Instagram" style="height: 25px; width: auto; margin-right: 2px; opacity: 0.7;">
-                    @ftc10582
-                </a>
-                <a href="mailto:ftc10582@gmail.com" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
-                    <img src="../res/img/email-icon2.png" alt="Email" style="height: 25px; width: auto; margin-right: 4px; opacity: 0.7;">
-                    ftc10582@gmail.com
-                </a>
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h6 class="text-emerald text-uppercase small fw-bold mb-3">Contact Us</h6>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <a href="https://www.instagram.com/ftc10582/?hl=en" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
+                        <img src="../res/img/instagram-removebg-preview.png" alt="Instagram" style="height: 25px; width: auto; margin-right: 2px; opacity: 0.7;">
+                        @ftc10582
+                    </a>
+                    <a href="mailto:ftc10582@gmail.com" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
+                        <img src="../res/img/email-icon2.png" alt="Email" style="height: 25px; width: auto; margin-right: 4px; opacity: 0.7;">
+                        ftc10582@gmail.com
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <!-- Right Side: Copyright -->
-        <div class="col-md-4 text-center text-md-end">
-            <p class="small mb-0 text-secondary" style="letter-spacing: 2px;">
-                © Emerald Knights 2025-26. <br>All Rights Reserved.
-            </p>
+            <div class="col-md-4 text-center text-md-end">
+                <p class="small mb-0 text-secondary" style="letter-spacing: 2px;">
+                    © Emerald Knights 2026-27. <br>All Rights Reserved.
+                </p>
+            </div>
         </div>
     </div>
-</div>
 </footer>
 
-
-<!-- Scroll to Top -->
 <button id="scrollTopBtn" onclick="scrollToTop()" title="Go to top"><span>&uarr;</span></button>
 
-<!-- Bootstrap JS Bundle (This is what makes the buttons work!) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+    const seasonContainer = document.getElementById('seasonScrollTrack');
+    const seasonLeftBtn = document.getElementById('seasonLeftArrow');
+    const seasonRightBtn = document.getElementById('seasonRightArrow');
 
-    // Season Scroll Track Logic
-const seasonContainer = document.getElementById('seasonScrollTrack');
-const seasonLeftBtn = document.getElementById('seasonLeftArrow');
-const seasonRightBtn = document.getElementById('seasonRightArrow');
+    function updateSeasonArrows() {
+        if (!seasonContainer) return;
+        const scrollLeft = seasonContainer.scrollLeft;
+        const maxScroll = seasonContainer.scrollWidth - seasonContainer.clientWidth;
+        seasonLeftBtn.style.display = scrollLeft <= 5 ? 'none' : 'flex';
+        seasonRightBtn.style.display = scrollLeft >= maxScroll - 5 ? 'none' : 'flex';
+    }
 
-function updateSeasonArrows() {
-    if (!seasonContainer) return;
-    const scrollLeft = seasonContainer.scrollLeft;
-    const maxScroll = seasonContainer.scrollWidth - seasonContainer.clientWidth;
+    function scrollSeason(distance) {
+        seasonContainer.scrollBy({ left: distance, behavior: 'smooth' });
+    }
 
-    seasonLeftBtn.style.display = scrollLeft <= 5 ? 'none' : 'flex';
-    seasonRightBtn.style.display = scrollLeft >= maxScroll - 5 ? 'none' : 'flex';
-}
-
-function scrollSeason(distance) {
-    seasonContainer.scrollBy({ left: distance, behavior: 'smooth' });
-}
-
-// Attach listeners
-seasonContainer.addEventListener('scroll', updateSeasonArrows);
-window.addEventListener('load', updateSeasonArrows);
-window.addEventListener('resize', updateSeasonArrows);
-
+    seasonContainer.addEventListener('scroll', updateSeasonArrows);
+    window.addEventListener('load', updateSeasonArrows);
+    window.addEventListener('resize', updateSeasonArrows);
 
     document.addEventListener('DOMContentLoaded', function() {
-        // 1. Reveal Animations
         const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -385,15 +347,6 @@ window.addEventListener('resize', updateSeasonArrows);
 
         document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-        // 2. Forced initial reveal for top elements
-        setTimeout(() => {
-            document.querySelectorAll('.reveal').forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight) el.classList.add('slide-in-visible');
-            });
-        }, 150);
-
-        // 3. Scroll to Top logic
         const scrollTopBtn = document.getElementById("scrollTopBtn");
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) scrollTopBtn.classList.add("visible");
@@ -403,9 +356,6 @@ window.addEventListener('resize', updateSeasonArrows);
 
     function scrollToTop() { window.scrollTo({ top: 0, behavior: "smooth" }); }
 </script>
-
-</body>
-</html>
 
 </body>
 </html>

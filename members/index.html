@@ -20,6 +20,14 @@
             background: radial-gradient(circle at 50% 50%, #dcf5dc 0%, #ffffff 100%);
             border-bottom: 1px solid rgba(0, 150, 57, 0.1);
         }
+        .alumni-card {
+            transition: all 0.3s ease;
+            opacity: 0.85;
+        }
+        .alumni-card:hover {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
@@ -44,7 +52,6 @@
                 <li class="nav-item"><a class="nav-link" href="../sponsors/index.html">Sponsors</a></li>
                 <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
                 <li class="nav-item"><a class="btn btn-outline-light ms-lg-2 px-3" target="_blank" href="https://github.com/Emerald-Knights">GitHub</a></li>
-
             </ul>
         </div>
     </div>
@@ -52,51 +59,47 @@
 
 <!-- Team Members Header -->
 <header id="pageHeader" class="py-5 text-center page-header reveal">
-    <div class="container">        <h1 class="font-pixel text-emerald mb-3" style="font-size: 2.5rem;">Team Members</h1>
+    <div class="container">
+        <h1 class="font-pixel text-emerald mb-3" style="font-size: 2.5rem;">Team Members</h1>
         <p class="text-muted lead mx-auto" style="max-width: 600px;">Meet the high school students and mentors behind the bot.</p>
     </div>
 </header>
 
-<section id="impact" class="py-5 bg-white border-bottom reveal delay-1"
+<!-- Current Members Section -->
+<section id="members" class="py-5 bg-white border-bottom reveal delay-1"
          style="background: radial-gradient(circle at 60% 50%, #e8f5e9 0%, #EBEBEB 100%);">
     <div class="container">
-        <!-- Rows appear together using 'reveal' on the row itself -->
 
-        <!-- Row 1 -->
+        <!-- Row 1: Captains & Head of Build -->
         <div class="row g-4 mb-4 reveal">
-            <!-- Crystal -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Crystal.png" class="card-img-top" alt="Crystal" style="height: 320px; object-fit: cover;" />
+                        <img src="../res/img/team/Jason.png" class="card-img-top" alt="Jason" style="height: 320px; object-fit: cover;" />
                     </div>
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Crystal Zeng</h5>
+                            <h5 class="fw-bold mb-0">Jason Qi</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CO-CAPTAIN</span>
                         </div>
-                        <p class="text-secondary small mb-0">Crystal is one of the current co-captains and is a senior but a junior on the team. Crystal is a prominent contributor to designing
-                            and building the physical bot. Crystal’s favorite fruit is watermelon but she is allergic to it.</p>
+                        <p class="text-secondary small mb-0">Jason is a junior and one of the co-captains. He joined in 24-25 as a coder and is the younger brother of alumni Bryan Qi.</p>
                     </div>
                 </div>
             </div>
-            <!-- Kaitlin -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Kaitlin.png" class="card-img-top" alt="Kaitlin" style="height: 320px; object-fit: cover;" />
+                        <img src="../res/img/team/Arkit.png" class="card-img-top" alt="Arkit" style="height: 320px; object-fit: cover;" />
                     </div>
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Kaitlin Manoj</h5>
+                            <h5 class="fw-bold mb-0">Arkit Shah</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CO-CAPTAIN</span>
                         </div>
-                        <p class="text-secondary small mb-0">Kaitlin is one of the co-captains and is a senior. She is a prominent contributor to recording various
-                            iterations of each robot design and often tests the feasibility of bot designs using Fusion360.</p>
+                        <p class="text-secondary small mb-0">Arkit is a senior co-captain. Inventor of the “live-logging method” and an avid traveler to over 15 countries.</p>
                     </div>
                 </div>
             </div>
-            <!-- Daniel -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
@@ -107,67 +110,14 @@
                             <h5 class="fw-bold mb-0">Daniel Su</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF BUILD</span>
                         </div>
-                        <p class="text-secondary small mb-0">Daniel is a sophomore and current Head of Build of the team. He enjoys volleyball and martial arts and is
-                            the younger brother of Emerald Knights Alumni Jessica and Rachel Su. He has spent over $1,000 on Pokemon cards.</p>
+                        <p class="text-secondary small mb-0">Daniel is a junior and Head of Build. He enjoys volleyball and martial arts. Brother of alumni Jessica and Rachel Su.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Row 2 -->
+        <!-- Row 2: CAD & Code -->
         <div class="row g-4 mb-4 reveal">
-            <!-- Jack -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Jack.png" class="card-img-top" alt="Jack" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Jack Liu</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF CODE</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Jack is the current Head of Code of the team and joined as a freshman during the 21-22 season and
-                            is now currently a senior. Besides coding, he enjoys lifting and drinking lots of energy drinks.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Ryan -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Ryan.png" class="card-img-top" alt="Ryan" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Ryan Chen</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF FINANCE</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Ryan or “Dottie” is a senior but a junior builder on the team. He is an important part of the builder team who helps
-                            create the robot. Ryan enjoys playing volleyball and Fortnite.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Jonny -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Jonny.png" class="card-img-top" alt="Jonny" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Jonny Ma</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CO-HEAD OF CAD</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Jonny is a senior on the team and is one of the co-heads of CAD. Jonny enjoys opening digital Pokemon Card
-                            packs and is a very energetic and entertaining member of the team, bringing energy to every meeting.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-4 mb-4 reveal">
-            <!-- allison -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
@@ -178,151 +128,10 @@
                             <h5 class="fw-bold mb-0">Allison Zhou</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CO-HEAD OF CAD</span>
                         </div>
-                        <p class="text-secondary small mb-0">Allison is a sophomore on the team and joined the team during the 24-25 season and is the current co-head of CAD. She enjoys listening to kpop
-                            and watching anime for men with white hair. Allison says she is very nonchalant.</p>
+                        <p class="text-secondary small mb-0">Allison is a junior co-head of CAD. She enjoys kpop and is known for being extremely nonchalant.</p>
                     </div>
                 </div>
             </div>
-            <!-- pari -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Pari.png" class="card-img-top" alt="Pari" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Pari Narang</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF MEDIA</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Pari is a senior on the team who is the head of media. She plans out the different media posts we put
-                            onto Instagram and sets up outreaches with other teams and events.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- jason -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Jason.png" class="card-img-top" alt="Jason" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Jason Qi</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF OUTREACH</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Jason joined the team in the 24-25 season as a coder and is a sophomore. He is the younger brother of alumni Bryan Qi.
-                            Jason likes playing a specific line from the song Coffee by BoyWithUke.</p>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- !!! IMPORTANT: THIS CLOSES THE ROW CONTAINING PARI AND JASON !!! -->
-
-        <!-- NOW START THE NEW ROW FOR JACK, RYAN, JONNY -->
-        <div class="row g-4 mb-4 reveal">
-            <!-- arkit -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Arkit.png" class="card-img-top" alt="Arkit" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Arkit Shah</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF LOGBOOK</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Arkit is the current Head of Logbook and is a junior on the team. As the Head of Log, Arkit is in charge of documenting
-                            progress during meetings and various changes to Code, Build and CAD. Arkit is the inventor of the “live-logging method”
-                            and is an avid traveler, having been to over 15 countries.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ben -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Ben.png" class="card-img-top" alt="Benjamin" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Benjamin Sun</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CODE</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Ben is a junior coder on the team (made this site!). He is very good at competition math and being intelligent. Ben is a skilled
-                            problem solver and enjoys swimming.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- annie -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/team/Annie.png" class="card-img-top" alt="Annie" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Annie Jiang</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">BUILD</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Annie is a junior on the team who was initially a coder but has now switched to being a full-time builder. One of
-                            Annie’s favorite foods are frog legs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-4 mb-4 reveal">
-            <!-- wayne -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/placeholder.jpg" class="card-img-top" alt="Wayne" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Wayne Li</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">BUILD</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Wayne is a sophomore but a freshman on the team. While being a new builder, Wayne is a vital part of the build team.
-                            Wayne is a national level swimmer, and likes to paint his toe nails. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- aarush -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/placeholder.jpg" class="card-img-top" alt="Aarush" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Aarush Gupta</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CODE</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Aarush is a sophomore at but a freshman on the team.
-                            He contributes to programming and robot control. Aarush is an avid enjoyer of the 6-7 meme. </p>
-                    </div>
-                </div>
-            </div>
-            <!-- kat -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
-                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
-                        <img src="../res/img/placeholder.jpg" class="card-img-top" alt="Katelyn" style="height: 320px; object-fit: cover;" />
-                    </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <h5 class="fw-bold mb-0">Katelyn Wang</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CODE</span>
-                        </div>
-                        <p class="text-secondary small mb-0">Katelyn or "Kat" is a freshman on the team and is part of the Code team. She works on robot programming and software development. On non-robotics days, she has 8
-                            hours of screen time on Instagram.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-4 mb-4 reveal">
-            <!-- arkit -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
@@ -331,14 +140,44 @@
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <h5 class="fw-bold mb-0">Grace Sun</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CAD</span>
+                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">CO-HEAD OF CAD</span>
                         </div>
-                        <p class="text-secondary small mb-0">Grace is a freshman on the team, and designs parts in CAD and adjusts models through testing and iteration. Grace enjoys graphic design and playing
-                            volleyball. </p>
+                        <p class="text-secondary small mb-0">Grace is a sophomore co-head of CAD. She enjoys graphic design and playing volleyball.</p>
                     </div>
                 </div>
             </div>
-            <!-- ben -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
+                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
+                        <img src="../res/img/placeholder.jpg" class="card-img-top" alt="Aarush" style="height: 320px; object-fit: cover;" />
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <h5 class="fw-bold mb-0">Aarush Gupta</h5>
+                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF CODE</span>
+                        </div>
+                        <p class="text-secondary small mb-0">Aarush is a junior and Head of Code. He handles robot programming and loves the 6-7 meme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3: Outreach, Finance, Logbook -->
+        <div class="row g-4 mb-4 reveal">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
+                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
+                        <img src="../res/img/placeholder.jpg" class="card-img-top" alt="Katelyn" style="height: 320px; object-fit: cover;" />
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <h5 class="fw-bold mb-0">Katelyn Wang</h5>
+                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF OUTREACH</span>
+                        </div>
+                        <p class="text-secondary small mb-0">Kat is a sophomore Head of Outreach. She balances robotics with a healthy amount of Instagram screen time.</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
@@ -347,14 +186,30 @@
                     <div class="card-body p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <h5 class="fw-bold mb-0">Yashi Sodha</h5>
-                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">MEDIA/CAD</span>
+                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF FINANCE</span>
                         </div>
-                        <p class="text-secondary small mb-0">Yashi is a freshman on the team, and is the director behind some of the team's most inspirational and creative reels!
-                            She has made over 6 billion dollars in a fake virtual investing simulation. </p>
+                        <p class="text-secondary small mb-0">Yashi is a sophomore Head of Finance. Creative reel director and virtual investing expert.</p>
                     </div>
                 </div>
             </div>
-            <!-- annie -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
+                    <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
+                        <img src="../res/img/placeholder.jpg" class="card-img-top" alt="Wayne" style="height: 320px; object-fit: cover;" />
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <h5 class="fw-bold mb-0">Wayne Li</h5>
+                            <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">HEAD OF LOGBOOK</span>
+                        </div>
+                        <p class="text-secondary small mb-0">Wayne is a junior Head of Logbook. A national swimmer and essential build team member.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row g-4 mb-4 reveal">
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div style="overflow: hidden; border-radius: 15px 15px 0 0;">
@@ -365,8 +220,7 @@
                             <h5 class="fw-bold mb-0">Jessica Niu</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">FINANCE</span>
                         </div>
-                        <p class="text-secondary small mb-0">Jessica is a freshman on the team, and spends countless hours drafting emails to companies, earning the team hundreds of dollars.
-                            She can bench Grace Sun. </p>
+                        <p class="text-secondary small mb-0">Jessica is a sophomore finance member. Drafting emails and supporting team sponsorships.</p>
                     </div>
                 </div>
             </div>
@@ -377,12 +231,9 @@
 <!-- Mentors Section -->
 <section class="py-5 bg-off-white">
     <div class="container">
-        <!-- Added 'reveal' to the header -->
         <h2 class="font-pixel text-center text-emerald mb-5 reveal" style="font-size: 2.5rem;">Mentors</h2>
-
-        <!-- Row for Mentors -->
         <div class="row g-4 justify-content-center reveal">
-            <!-- Mr. Van Pelt -->
+            <!-- Current Mentors -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <img src="../res/img/team/MVP.png" class="card-img-top" alt="Coach" style="height: 320px; object-fit: cover; border-radius: 15px 15px 0 0;"/>
@@ -391,12 +242,10 @@
                             <h5 class="fw-bold mb-0">Mr. Van Pelt</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">COACH</span>
                         </div>
-                        <p class="text-secondary small mb-0">Teaches AP CS at LHS. A very supportive coach who keeps all the teams on track.</p>
+                        <p class="text-secondary small mb-0">AP CS teacher at LHS. Supportive coach keeping all teams on track since 2022.</p>
                     </div>
                 </div>
             </div>
-
-            <!-- Mr. Karpack -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <img src="../res/img/team/MrKarpack.png" class="card-img-top" alt="Coach" style="height: 320px; object-fit: cover; border-radius: 15px 15px 0 0;"/>
@@ -405,7 +254,46 @@
                             <h5 class="fw-bold mb-0">Mr. Karpack</h5>
                             <span class="badge bg-mint text-emerald px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">COACH</span>
                         </div>
-                        <p class="text-secondary small mb-0">Teaches Tech and Design. Offers a plethora of knowledge and hosts weekly check-ins.</p>
+                        <p class="text-secondary small mb-0">Tech and Design teacher. Provides deep technical knowledge since 2022.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Legacy Mentors -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
+                    <img src="../res/img/team/Z.png" class="card-img-top" alt="Coach" style="height: 320px; object-fit: cover; border-radius: 15px 15px 0 0;"/>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <h5 class="fw-bold mb-0">Ms. Ziobro</h5>
+                            <span class="badge bg-secondary text-white px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">FORMER COACH</span>
+                        </div>
+                        <p class="text-secondary small mb-0">2019-2021 Coach. Introduced streamlined CAD planning and organization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center mt-2 reveal">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
+                    <img src="../res/img/team/Micciche.PNG" class="card-img-top" alt="Coach" style="height: 320px; object-fit: cover; border-radius: 15px 15px 0 0;"/>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <h5 class="fw-bold mb-0">Mr. Micciche</h5>
+                            <span class="badge bg-secondary text-white px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">FORMER COACH</span>
+                        </div>
+                        <p class="text-secondary small mb-0">2018-2020 Coach. Laid-back mentor who helped draft early robot concepts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card member-card h-100 border-0 shadow-sm" style="border-radius: 15px;">
+                    <img src="../res/img/team/Novo.png" class="card-img-top" alt="Coach" style="height: 320px; object-fit: cover; border-radius: 15px 15px 0 0;"/>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <h5 class="fw-bold mb-0">Mr. Novotny</h5>
+                            <span class="badge bg-secondary text-white px-2 py-1" style="border-radius: 4px; font-size: 0.7rem;">FORMER COACH</span>
+                        </div>
+                        <p class="text-secondary small mb-0">2016-2018 Coach. Taught the "practical" side of robotics and judged competitions.</p>
                     </div>
                 </div>
             </div>
@@ -413,59 +301,160 @@
     </div>
 </section>
 
-<footer class="py-5 border-top border-emerald"
-        style="background-color: #f1f8f1; border-width: 1px !important;">    <div class="container">
-    <div class="row align-items-center">
+<!-- Alumni Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="font-pixel text-center text-emerald mb-5 reveal" style="font-size: 2.5rem;">Alumni</h2>
 
-        <!-- Left Side: Logo & Brand -->
-        <div class="col-md-4 mb-4 mb-md-0">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <!-- Logo remains clear -->
-                    <img src="../res/img/ek-logo.png" alt="EK Logo" style="height: 80px; width: 80px; object-fit: contain;">
+        <!-- Recent Graduates (Card Style) -->
+        <h4 class="text-emerald fw-bold mb-4 reveal">Class of 2026</h4>
+        <div class="row g-4 reveal mb-5">
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Crystal Zeng</h6>
+                    <small class="text-muted">Co-Captain</small>
                 </div>
-                <div class="col">
-                    <h5 class="text-emerald mb-1" style="letter-spacing: 2px; font-size: 1.2rem;">FTC 10582</h5>
-                    <p class="small text-secondary mb-0">Building robots, fostering community, and engineering the future.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Kaitlin Manoj</h6>
+                    <small class="text-muted">Co-Captain</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Jack Liu</h6>
+                    <small class="text-muted">Head of Code</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Ryan Chen</h6>
+                    <small class="text-muted">Head of Finance</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Jonny Ma</h6>
+                    <small class="text-muted">Co-Head of CAD</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Pari Narang</h6>
+                    <small class="text-muted">Head of Media</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Benjamin Sun</h6>
+                    <small class="text-muted">Code</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card alumni-card h-100 border-0 shadow-sm p-3 text-center" style="border-radius: 10px;">
+                    <h6 class="fw-bold mb-1">Annie Jiang</h6>
+                    <small class="text-muted">Build</small>
                 </div>
             </div>
         </div>
 
-        <!-- Middle: Quick Links -->
-        <div class="col-md-4 text-center mb-4 mb-md-0">
-            <h6 class="text-emerald text-uppercase small fw-bold mb-3">Contact Us</h6>
-            <div class="d-flex flex-column align-items-center gap-2">
-                <!-- Changed text-white-50 to text-secondary -->
-                <a href="https://www.instagram.com/ftc10582/?hl=en" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
-                    <img src="../res/img/instagram-removebg-preview.png" alt="Instagram" style="height: 25px; width: auto; margin-right: 2px; opacity: 0.7;">
-                    @ftc10582
-                </a>
-                <a href="mailto:ftc10582@gmail.com" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
-                    <img src="../res/img/email-icon2.png" alt="Email" style="height: 25px; width: auto; margin-right: 4px; opacity: 0.7;">
-                    ftc10582@gmail.com
-                </a>
-            </div>
-        </div>
-
-        <!-- Right Side: Copyright -->
-        <div class="col-md-4 text-center text-md-end">
-            <p class="small mb-0 text-secondary" style="letter-spacing: 2px;">
-                © Emerald Knights 2025-26. <br>All Rights Reserved.
-            </p>
+        <!-- Historical Legacy (List Style) -->
+        <h4 class="text-emerald fw-bold mb-4 reveal">Legacy Alumni</h4>
+        <div class="row g-3 reveal">
+            <!-- Long list generated from snippet -->
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Shining Wang</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Bryan Qi</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Keshav Gollamundi</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Olivia Mei</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Jessica Su</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Andy Hong</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Daniel Li</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Ryan Stern</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Ryan Wu</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Amanda Bialick</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Zach Canent</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Lanz Canent</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Ming Ma</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Brandon Kim</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Julia Zhang</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Erica Wang</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Andrew Chan</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Killian Deng</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Perry Chen</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Heainz Manoj</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Anthony Chow</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Thomas Lang</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Ally Mintz</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Lucy Xu</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Divyank Jain</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Ethan Dcosta</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Nicolo Agbayani</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Angelina Chu</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Talia Rabban</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Justin Kim</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Arib Mahmud</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Salem Crute</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Preston Xu</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Gene Liu</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">David Lev Samolkin</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Janice Kim</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Anna Xia</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Katrina Pham</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Ben Li</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Drew Fabian</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Rachel Su</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Max Zhuang</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Jacob Dennis</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Fillip Kizhner</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Dmitry Sambuk</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Andie Weiser-Schlesinger</div></div>
+            <div class="col-6 col-md-4 col-lg-3"><div class="p-2 bg-light rounded text-center small">Neha Parmar</div></div>
         </div>
     </div>
-</div>
+</section>
+
+<footer class="py-5 border-top border-emerald" style="background-color: #f1f8f1; border-width: 1px !important;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <img src="../res/img/ek-logo.png" alt="EK Logo" style="height: 80px; width: 80px; object-fit: contain;">
+                    </div>
+                    <div class="col">
+                        <h5 class="text-emerald mb-1" style="letter-spacing: 2px; font-size: 1.2rem;">FTC 10582</h5>
+                        <p class="small text-secondary mb-0">Building robots, fostering community, and engineering the future.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h6 class="text-emerald text-uppercase small fw-bold mb-3">Contact Us</h6>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <a href="https://www.instagram.com/ftc10582/?hl=en" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
+                        <img src="../res/img/instagram-removebg-preview.png" alt="Instagram" style="height: 25px; width: auto; margin-right: 2px; opacity: 0.7;">
+                        @ftc10582
+                    </a>
+                    <a href="mailto:ftc10582@gmail.com" target="_blank" class="text-secondary text-decoration-none small footer-link d-flex align-items-center">
+                        <img src="../res/img/email-icon2.png" alt="Email" style="height: 25px; width: auto; margin-right: 4px; opacity: 0.7;">
+                        ftc10582@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <p class="small mb-0 text-secondary" style="letter-spacing: 2px;">
+                    © Emerald Knights 2026-27. <br>All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- CLEANED UP JAVASCRIPT -->
+<button id="scrollTopBtn" onclick="scrollToTop()" title="Go to top"><span>&uarr;</span></button>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // 1. SCROLL REVEAL LOGIC
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -475,35 +464,23 @@
             });
         }, observerOptions);
 
-        const revealElements = document.querySelectorAll('.reveal');
-        revealElements.forEach(el => revealObserver.observe(el));
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-        // 2. FORCED INITIAL REVEAL (Fix for top of page)
         setTimeout(() => {
-            revealElements.forEach(el => {
+            document.querySelectorAll('.reveal').forEach(el => {
                 const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight) {
-                    el.classList.add('slide-in-visible');
-                }
+                if (rect.top < window.innerHeight) el.classList.add('slide-in-visible');
             });
         }, 150);
 
-        // 3. SCROLL TO TOP BUTTON LOGIC
         const scrollTopBtn = document.getElementById("scrollTopBtn");
-        if(scrollTopBtn) {
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 100) {
-                    scrollTopBtn.classList.add("visible");
-                } else {
-                    scrollTopBtn.classList.remove("visible");
-                }
-            });
-        }
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) scrollTopBtn.classList.add("visible");
+            else scrollTopBtn.classList.remove("visible");
+        });
     });
 
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    function scrollToTop() { window.scrollTo({ top: 0, behavior: "smooth" }); }
 </script>
 </body>
 </html>
